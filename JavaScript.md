@@ -217,3 +217,19 @@ const myModule = { x: 1, y: () => { console.log('This is ES5') }}
 export default myModule;
 import myModule from './myModule';
 ```
+
+### 15. 解释 JavaScript 中“undefined”和“not defined”之间的区别。
+- 被声明但未被定义的变量时，会出现 undefined 错误。
+- 既未声明也未定义的变量时，将会出现 not defined 错误。
+
+### 16. 匿名和命名函数有什么区别？
+```javascript
+var foo = function() { // 赋给变量 foo 的匿名函数
+ // ..
+};
+var x = function bar(){ // 赋给变量 x 的命名函数 bar
+ // ..
+};
+foo(); // 实际执行函数
+x();
+```
